@@ -19,6 +19,7 @@ controller  → Camada responsável pelos endpoints REST
 service     → Regras de negócio
 repository  → Comunicação com o banco de dados
 model       → Entidades e enums
+
 📌 Funcionalidades
 ✔ Criar tarefa
 ✔ Listar todas as tarefas
@@ -69,6 +70,7 @@ spring.datasource.password=SUA_SENHA
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+
 ▶ Como Executar
 mvn spring-boot:run
 Ou execute a classe:
