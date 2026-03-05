@@ -1,34 +1,28 @@
-📌 API Gerenciador de Tarefas
 API REST desenvolvida com Spring Boot para gerenciamento de tarefas, permitindo operações completas de CRUD (Create, Read, Update, Delete).
 
-🚀 Tecnologias Utilizadas
+Tecnologias Utilizadas
 Java 21
-
 Spring Boot 4
-
 Spring Data JPA
-
 Hibernate
-
 PostgreSQL
-
 Maven
 
-📂 Estrutura do Projeto
+Estrutura do Projeto
 controller  → Camada responsável pelos endpoints REST
 service     → Regras de negócio
 repository  → Comunicação com o banco de dados
 model       → Entidades e enums
 
-📌 Funcionalidades
+Funcionalidades
 ✔ Criar tarefa
 ✔ Listar todas as tarefas
 ✔ Buscar tarefa por ID
 ✔ Atualizar tarefa
 ✔ Deletar tarefa
 
-🛠 Endpoints da API
-🔹 Criar tarefa
+Endpoints da API
+Criar tarefa
 POST /tarefas
 
 {
@@ -36,13 +30,13 @@ POST /tarefas
   "descricao": "Aprender API REST",
   "status": "PENDENTE"
 }
-🔹 Listar todas
+Listar todas
 GET /tarefas
 
-🔹 Buscar por ID
+Buscar por ID
 GET /tarefas/{id}
 
-🔹 Atualizar tarefa
+Atualizar tarefa
 PUT /tarefas/{id}
 
 {
@@ -50,7 +44,7 @@ PUT /tarefas/{id}
   "descricao": "Nova descrição",
   "status": "CONCLUIDA"
 }
-🔹 Deletar tarefa
+Deletar tarefa
 DELETE /tarefas/{id}
 
 Retorno (200):
@@ -70,25 +64,6 @@ spring.datasource.password=SUA_SENHA
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-
-▶ Como Executar
-mvn spring-boot:run
-Ou execute a classe:
-
-GerenciadorDeTarefasApplication
-A aplicação iniciará em:
-
-http://localhost:8080
-📈 Melhorias Futuras
-DTO para separar entidade da API
-
-Validação com @Valid
-
-Paginação
-
-Tratamento global de exceções
-
-Documentação com Swagger
 
 👨‍💻 Autor
 Desenvolvido por Guilherme Marçal 🚀
